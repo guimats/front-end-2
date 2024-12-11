@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conteudo h2 span {
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .conteudo p {
+            overflow: hidden;
+            height: 0;
+            transition: 1s;
+        }
+
+        .mostrar {
+            height: 100px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conteudo">
+        <h2>Titulo do conteudo <span>Ver mais!</span></h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae vel, tenetur commodi officiis voluptatum
+            fugiat exercitationem expedita excepturi doloremque nam? Veniam eligendi sapiente distinctio nam illo, quos
+            nesciunt vel deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos necessitatibus qui
+            cupiditate illo rerum facilis nihil pariatur quidem quod deserunt, exercitationem vitae illum saepe quam
+            modi iste reprehenderit dignissimos nesciunt?
+        </p>
+    </div>
+    <div class="conteudo">
+        <h2>Titulo do conteudo <span>Ver mais!</span></h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae vel, tenetur commodi officiis voluptatum
+            fugiat exercitationem expedita excepturi doloremque nam? Veniam eligendi sapiente distinctio nam illo, quos
+            nesciunt vel deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos necessitatibus qui
+            cupiditate illo rerum facilis nihil pariatur quidem quod deserunt, exercitationem vitae illum saepe quam
+            modi iste reprehenderit dignissimos nesciunt?
+        </p>
+    </div>
+    <div class="conteudo">
+        <h2>Titulo do conteudo <span>Ver mais!</span></h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae vel, tenetur commodi officiis voluptatum
+            fugiat exercitationem expedita excepturi doloremque nam? Veniam eligendi sapiente distinctio nam illo, quos
+            nesciunt vel deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos necessitatibus qui
+            cupiditate illo rerum facilis nihil pariatur quidem quod deserunt, exercitationem vitae illum saepe quam
+            modi iste reprehenderit dignissimos nesciunt?
+        </p>
+    </div>
+    <script>
+        const span = document.querySelectorAll('.conteudo span');
+        for (let i = 0; i < span.length; i++) {
+            span[i].addEventListener('click', () => {
+                const paragrafo = document.querySelectorAll('.conteudo p');
+                paragrafo[i].classList.toggle('mostrar');
+                if (paragrafo[i].classList.contains('mostrar')) {
+                    span[i].innerHTML = 'Ocultar';
+                } else {
+                    span[i].innerHTML = 'Ver mais!';
+                }
+            });
+        }
+
+    </script>
+</body>
+
+</html>
