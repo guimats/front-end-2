@@ -1,0 +1,99 @@
+:root {
+    --blue-color: #435591;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #5a71bb;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+}
+
+.lista-cadastro {
+    display: flex;
+    margin: 20px 0;
+    padding: 0 20px;
+    align-items: center;
+    gap: 5px;
+    color: var(--blue-color);
+}
+
+.lista-cadastro label {
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+.lista-cadastro input[type=text],
+.lista-cadastro input[type=number] {
+    flex: 1;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.lista-cadastro input[type=submit] {
+    height: 40px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    padding: 0 20px;
+    background-color: var(--blue-color);
+    border: 0;
+}
+
+.lista-cadastro input[type=submit]:hover {
+    background-color: #0f2366;
+    transition: 0.1s;
+}
+
+.lista-produtos-single {
+    padding: 10px 0;
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+.lista-produtos-single h3 {
+    flex: 1;
+    padding: 0 17px;
+}
+
+h3.price-produto {
+    text-align: right;
+}
+
+h3.price-produto span {
+    background-color: var(--blue-color);
+    padding: 8px 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+.soma-produtos {
+    margin: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.btn-limpar {
+    padding: 15px 30px;
+    background-color: var(--blue-color);
+    border: 0;
+    color: white;
+    position: fixed;
+    bottom: 15px;
+    left: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.btn-limpar:hover {
+    background-color: #0f2366;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2>APP lista de supermercado</h2>
+    </header>
+    <div class="lista-cadastro">
+        <label for="nome_produto">Nome:</label>
+        <input type="text" name="nome_produto" id="nome_produto" placeholder="Nome do produto">
+        <label for="valor_produto">Valor:</label>
+        <input type="number" name="price" placeholder="Valor do produto" step="0.01">
+        <input type="submit" value="Cadastrar" name="acao">
+    </div>
+
+    <div class="lista-produtos">
+
+    </div>
+
+    <button class="btn-limpar" name="limpar">Limpar compras</button>
+
+    <div class="soma-produtos">
+        <h1>Total: RS$<span>0</span></h1>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
